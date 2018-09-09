@@ -14,7 +14,6 @@
           <v-card-title>
             <span class="headline">{{ formTitle }}</span>
           </v-card-title>
-
           <v-card-text>
             <v-container grid-list-md>
               <v-layout wrap>
@@ -66,14 +65,13 @@
         </td>
       </template>
       <template slot="no-data">
-        <v-btn color="primary" @click="initialize">Reset</v-btn>
+        <v-btn color="primary" @click="initialize">Пусто</v-btn>
       </template>
     </v-data-table>
   </div>
 </template>
 <script>
   import {listOfCompanys} from '../companyList.js';
-  console.log(listOfCompanys);
   export default {
     data: () => ({
       dialog: false,
@@ -91,12 +89,12 @@
       editedIndex: -1,
       editedItem: {
         name: '',
-        inn: 0,
+        inn: undefined,
         boss: '',
       },
       defaultItem: {
         name: '',
-        inn: 0,
+        inn: undefined,
         boss: '',
       }
     }),
@@ -130,7 +128,7 @@
 
       deleteItem (item) {
         const index = this.companys.indexOf(item)
-        confirm('Are you sure you want to delete this item?') && this.companys.splice(index, 1)
+        confirm('Вы уверенны?') && this.companys.splice(index, 1)
       },
 
       close () {
@@ -154,5 +152,4 @@
 </script>
 
 <style scoped>
-
 </style>

@@ -1,14 +1,12 @@
 <template>
   <v-app>
-  <app-table></app-table>
+    <!--<app-auto-text-field></app-auto-text-field>-->
+    <app-table></app-table>
   </v-app>
 </template>
 
 <script>
-
-// import VApp from "vuetify/src/components/VApp/VApp";
 export default {
-  // components: {VApp},
   data () {
     return {
     }
@@ -17,5 +15,4 @@ export default {
 </script>
 
 <style lang="scss">
-
 </style>
