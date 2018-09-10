@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <!--<app-auto-text-field></app-auto-text-field>-->
     <app-table></app-table>
   </v-app>
 </template>
