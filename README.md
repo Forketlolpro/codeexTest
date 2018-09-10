@@ -1,8 +1,15 @@
 # codexx
 
-> A Vue.js project
+Интерфейс для добавления и редактирования справочника по компаниям.
 
-## Build Setup
+Что реализовал:
+ 
+-Клиентская пагинация
+
+-Клиентская сортировка
+
+
+## Инструкция
 
 ``` bash
 # install dependencies
@@ -15,4 +22,3 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
