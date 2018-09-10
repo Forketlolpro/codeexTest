@@ -59,11 +59,12 @@
 <script>
   export default {
     data: () => ({
-      formHasErrors: false,
       pagination: {
+        //количество  записей на странице
         rowsPerPage: 25,
       },
       dialog: false,
+      //массив с заголовками таблицы
       headers: [{
         text: 'Название',
         align: 'left',
@@ -95,6 +96,7 @@
     }),
 
     computed: {
+      //пагинация страниц
       pages() {
         if (this.pagination.rowsPerPage == null ||
           this.companys.length == null
